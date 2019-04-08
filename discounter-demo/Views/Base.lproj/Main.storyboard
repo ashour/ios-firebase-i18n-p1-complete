@@ -198,40 +198,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m0c-QJ-o5X">
-                                <rect key="frame" x="0.0" y="44" width="375" height="63"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="73"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdI-3A-OgJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abf-cB-sPF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discounter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-fi-YYe">
-                                                <rect key="frame" x="15" y="5.3333333333333375" width="97.666666666666671" height="24.666666666666671"/>
-                                                <fontDescription key="fontDescription" name="NotoSerif-SemiBoldItalic" family="Noto Serif" pointSize="18"/>
-                                                <color key="textColor" red="0.24705882352941178" green="0.22745098039215686" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-5H-KF9">
-                                                <rect key="frame" x="261" y="9.3333333333333357" width="99" height="20"/>
-                                                <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="14"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="4" maxY="0.0"/>
-                                                <state key="normal" title="Sort &amp; Filter" image="Filter-Icon">
-                                                    <color key="titleColor" red="0.29019607843137252" green="0.34509803921568627" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="VDH-gx-N7C">
+                                                <rect key="frame" x="15" y="0.0" width="345" height="45"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discounter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-fi-YYe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="45"/>
+                                                        <fontDescription key="fontDescription" name="NotoSerif-SemiBoldItalic" family="Noto Serif" pointSize="18"/>
+                                                        <color key="textColor" red="0.24705882352941178" green="0.22745098039215686" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-5H-KF9" customClass="FlippableUIButton" customModule="discounter_demo" customModuleProvider="target">
+                                                        <rect key="frame" x="124.66666666666664" y="0.0" width="220.33333333333337" height="45"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="4" maxY="0.0"/>
+                                                        <state key="normal" title="Sort &amp; Filter" image="Filter-Icon">
+                                                            <color key="titleColor" red="0.29019607843137252" green="0.34509803921568627" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="flipImageForRightToLeftLanguages" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="6H4-AW-fIY"/>
-                                            <constraint firstItem="2Sk-5H-KF9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MMo-fi-YYe" secondAttribute="trailing" constant="8" symbolic="YES" id="IKm-AT-XcX"/>
-                                            <constraint firstItem="MMo-fi-YYe" firstAttribute="leading" secondItem="OdI-3A-OgJ" secondAttribute="leading" constant="15" id="M91-TP-HxG"/>
-                                            <constraint firstAttribute="trailing" secondItem="2Sk-5H-KF9" secondAttribute="trailing" constant="15" id="Xp3-oa-ijf"/>
-                                            <constraint firstItem="MMo-fi-YYe" firstAttribute="centerY" secondItem="OdI-3A-OgJ" secondAttribute="centerY" id="qGT-71-ibt"/>
-                                            <constraint firstItem="2Sk-5H-KF9" firstAttribute="firstBaseline" secondItem="MMo-fi-YYe" secondAttribute="firstBaseline" id="udJ-vS-Ke5"/>
+                                            <constraint firstAttribute="height" constant="45" id="3aA-eS-APV"/>
+                                            <constraint firstAttribute="trailing" secondItem="VDH-gx-N7C" secondAttribute="trailing" constant="15" id="IjU-yb-pcl"/>
+                                            <constraint firstItem="VDH-gx-N7C" firstAttribute="leading" secondItem="abf-cB-sPF" secondAttribute="leading" constant="15" id="aky-dd-SBY"/>
+                                            <constraint firstItem="VDH-gx-N7C" firstAttribute="top" secondItem="abf-cB-sPF" secondAttribute="top" id="mVo-YE-7o3"/>
+                                            <constraint firstAttribute="bottom" secondItem="VDH-gx-N7C" secondAttribute="bottom" id="ouP-DB-3Qq"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1RB-Dn-fnD">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="28"/>
+                                        <rect key="frame" x="0.0" y="45" width="375" height="28"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0Z-jN-cO9">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0Z-jN-cO9" customClass="FlippableUIButton" customModule="discounter_demo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Italic" family="Noto Sans" pointSize="13"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -252,7 +259,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7xg-q2-IHo">
-                                <rect key="frame" x="0.0" y="107" width="375" height="622"/>
+                                <rect key="frame" x="0.0" y="117" width="375" height="612"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.92156862750000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL" rowHeight="232" id="S2M-GX-zsE" customClass="FeedTableViewCell" customModule="discounter_demo" customModuleProvider="target">
@@ -283,13 +290,16 @@
                                                                             <color key="textColor" red="0.24705882352941178" green="0.22745098039215686" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51q-FU-7Jv">
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51q-FU-7Jv" customClass="FlippableUIButton" customModule="discounter_demo" customModuleProvider="target">
                                                                             <rect key="frame" x="294" y="6.6666666666666679" width="36" height="36"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="36" id="32y-Iz-WNy"/>
                                                                                 <constraint firstAttribute="height" constant="36" id="MQr-Nv-Ns6"/>
                                                                             </constraints>
-                                                                            <state key="normal" title="Button" image="Favorite-Outline"/>
+                                                                            <state key="normal" image="Favorite-Outline"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="flipImageForRightToLeftLanguages" value="NO"/>
+                                                                            </userDefinedRuntimeAttributes>
                                                                         </button>
                                                                     </subviews>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -315,7 +325,7 @@
                                                                     <rect key="frame" x="0.0" y="157" width="345" height="60"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzU-br-lih" customClass="DesignableUILabel" customModule="discounter_demo" customModuleProvider="target">
-                                                                            <rect key="frame" x="10" y="5" width="69.333333333333329" height="22"/>
+                                                                            <rect key="frame" x="10" y="5" width="89.333333333333329" height="28"/>
                                                                             <color key="backgroundColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                                             <color key="textColor" red="1" green="0.98039215686274506" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
@@ -339,7 +349,7 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$29.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urD-eR-VrO" customClass="DesignableUILabel" customModule="discounter_demo" customModuleProvider="target">
-                                                                            <rect key="frame" x="284.66666666666669" y="5" width="50.333333333333314" height="22"/>
+                                                                            <rect key="frame" x="264.66666666666669" y="5" width="70.333333333333314" height="28"/>
                                                                             <color key="backgroundColor" red="0.29019607843137252" green="0.34509803921568627" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="16"/>
                                                                             <color key="textColor" red="1" green="0.98039215690000003" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -363,13 +373,13 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSM-j0-cvk">
-                                                                            <rect key="frame" x="10" y="31" width="32" height="15"/>
+                                                                            <rect key="frame" x="10" y="37" width="32" height="15"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="11"/>
                                                                             <color key="textColor" red="0.24705882352941178" green="0.22745098039215686" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$35.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-fb-qu2">
-                                                                            <rect key="frame" x="284.33333333333331" y="29" width="40.666666666666686" height="18"/>
+                                                                            <rect key="frame" x="284.33333333333331" y="35" width="40.666666666666686" height="18"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="13"/>
                                                                             <color key="textColor" red="0.29019607843137252" green="0.34509803921568627" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>

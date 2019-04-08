@@ -21,3 +21,8 @@ func strikeThrough(_ string: String) -> NSAttributedString
     
     return attributeString
 }
+
+func __(_ key: String) -> String
+{
+    return NSLocalizedString(key, comment: "")
+}

@@ -29,12 +29,13 @@ class FeedTableViewCell: UITableViewCell
     func updateUI(with product: Product)
     {
         productNameLabel.text = product.name
+
+        storeNameLabel.text = product.store.localizedUppercase
         
-        storeNameLabel.text = product.store.uppercased()
+        discountLabel.text = product.discount.localizedUppercase
         
-        discountLabel.text = product.discount.uppercased()
-        
-        expiryLabel.text = "Expires \(product.expires)".uppercased()
+        expiryLabel.text =
+            String(format: __("expires"), product.expires).localizedUppercase
         
         priceAfterDiscountLabel.text = product.priceAfterDiscount
         

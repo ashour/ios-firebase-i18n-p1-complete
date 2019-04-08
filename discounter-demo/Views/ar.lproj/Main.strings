@@ -1,0 +1,60 @@
+
+/* Class = "UIButton"; normalTitle = "Sort & Filter"; ObjectID = "2Sk-5H-KF9"; */
+"2Sk-5H-KF9.normalTitle" = "فرز وتصفية";
+
+/* Class = "UILabel"; text = "Search"; ObjectID = "448-81-bRb"; */
+"448-81-bRb.text" = "بحث";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "51q-FU-7Jv"; */
+"51q-FU-7Jv.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "A2n-hj-gb1"; */
+"A2n-hj-gb1.title" = "بحث";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "KnJ-5K-4Sz"; */
+"KnJ-5K-4Sz.text" = "Product Name";
+
+/* Class = "UILabel"; text = "Discounter"; ObjectID = "MMo-fi-YYe"; */
+"MMo-fi-YYe.text" = "دِسكاونتر";
+
+/* Class = "UITabBarItem"; title = "Alerts"; ObjectID = "Qk2-B5-MIL"; */
+"Qk2-B5-MIL.title" = "تنبيهات";
+
+/* Class = "UIButton"; normalTitle = "Sorted by first to expire"; ObjectID = "T0Z-jN-cO9"; */
+"T0Z-jN-cO9.normalTitle" = "مفروزة طبقاً لإنتهاء الصلاحية الأحدث";
+
+/* Class = "UILabel"; text = "$35.99"; ObjectID = "Ucz-fb-qu2"; */
+"Ucz-fb-qu2.text" = "$35.99";
+
+/* Class = "UILabel"; text = "[Placeholder Screen]"; ObjectID = "XEc-V4-6L5"; */
+"XEc-V4-6L5.text" = "[Placeholder Screen]";
+
+/* Class = "UILabel"; text = "[Placeholder Screen]"; ObjectID = "Y39-jE-UuB"; */
+"Y39-jE-UuB.text" = "[Placeholder Screen]";
+
+/* Class = "UILabel"; text = "Flyers"; ObjectID = "YyY-1e-1a8"; */
+"YyY-1e-1a8.text" = "نشرات";
+
+/* Class = "UILabel"; text = "Store Name"; ObjectID = "c7H-gA-2Ui"; */
+"c7H-gA-2Ui.text" = "Store Name";
+
+/* Class = "UILabel"; text = "Alerts"; ObjectID = "kdk-2U-nLi"; */
+"kdk-2U-nLi.text" = "تنبيهات";
+
+/* Class = "UILabel"; text = "Expiry"; ObjectID = "nSM-j0-cvk"; */
+"nSM-j0-cvk.text" = "Expiry";
+
+/* Class = "UITabBarItem"; title = "Flyers"; ObjectID = "nVO-Ol-ynr"; */
+"nVO-Ol-ynr.title" = "نشرات";
+
+/* Class = "UILabel"; text = "$29.99"; ObjectID = "urD-eR-VrO"; */
+"urD-eR-VrO.text" = "$29.99";
+
+/* Class = "UILabel"; text = "[Placeholder Screen]"; ObjectID = "vft-4f-Z12"; */
+"vft-4f-Z12.text" = "[Placeholder Screen]";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "xzU-br-lih"; */
+"xzU-br-lih.text" = "Discount";
+
+/* Class = "UITabBarItem"; title = "Feed"; ObjectID = "ya8-yM-RA5"; */
+"ya8-yM-RA5.title" = "منتجات";
