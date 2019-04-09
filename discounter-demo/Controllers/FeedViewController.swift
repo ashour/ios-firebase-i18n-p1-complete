@@ -10,7 +10,6 @@ import UIKit
 
 class FeedViewController:
     UIViewController,
-    UITableViewDelegate,
     UITableViewDataSource
 {
     
