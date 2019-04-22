@@ -1,5 +1,5 @@
 # Discounter (Demo)
-Compeleted Project for iOS/Firebase PhraseApp Blog Article
+Completed Project for iOS/Firebase PhraseApp Blog Article - Part 1
 
 ## Installation
 1. Clone this repo
